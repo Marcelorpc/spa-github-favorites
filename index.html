@@ -11,51 +11,53 @@
   <title>GitHub Favorites</title>
 </head>
 <body>
-  <header>
-    <img src="./assets/logo.svg" alt="Logo do GitHub Favorites">
-
-    <div>
-      <div class="input-wrapper">
-        <label for="input-username">Enter GitHub User</label>
-        <input id="input-username" type="text" placeholder="Enter GitHub User">
+  <div id="app">
+    <header>
+      <img src="./assets/logo.svg" alt="Logo do GitHub Favorites">
+  
+      <div>
+        <div class="input-wrapper">
+          <label class="sr-only" for="input-username">Enter GitHub User</label>
+          <input id="input-username" type="text" placeholder="Enter GitHub User">
+        </div>
+  
+        <button>
+          <img src="./assets/star-vector.svg" alt="Pequena estrela no botao favoritar">
+          FAVORITE
+        </button>
       </div>
-
-      <button>
-        <img src="./assets/star-vector.svg" alt="Pequena estrela no botao favoritar">
-        FAVORITE
-      </button>
+    </header>
+  
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td class="user">
+              <img src="https://github.com/Marcelorpc.png" alt="Profile picture">
+              <p>Marcelo Paiva Chaves</p>
+              <span>/marcelorpc</span>
+            </td>
+  
+            <td class="public_repos">520</td>
+            
+            <td class="followers">985</td>
+  
+            <td>
+              <button class="remove">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </header>
-
-  <div class="app">
-    <table>
-      <thead>
-        <tr>
-          <th>User</th>
-          <th>Repositories</th>
-          <th>Followers</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td class="user">
-            <img src="https://github.com/Marcelorpc.png" alt="Profile picture">
-            <p>Marcelo Paiva Chaves</p>
-            <span>/marcelorpc</span>
-          </td>
-
-          <td class="public_repos">520</td>
-          
-          <td class="followers">985</td>
-
-          <td>
-            <button class="remove">Remove</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </body>
 </html>
