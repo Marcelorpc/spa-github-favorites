@@ -1,3 +1,4 @@
+/*Estilizacao global */
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ body * {
   width: 1120px;
 }
 
+/* Estilizacao do Header */
 header {
   width: 100%;
   margin-bottom: 9rem;
@@ -67,4 +69,37 @@ header button {
   background-color: #065E7C;
   border: none;
   border-radius: 5px;
+
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+header button:hover{
+  background-color: white;
+  color: #065E7C;
+}
+
+header img {
+  transition: all 0.2s;
+}
+
+header button:hover img {
+  filter: invert(80%)
+}
+
+/* Estilizacao da Tabela */
+table {
+  width: 100%;
+  border: 1px solid #4A808C;
+  border-radius: 12px;
+}
+
+table thead {
+  background-color: hsla(194, 72%, 13%, 1);
+}
+
+table thead tr th{
+  padding: 1.2rem 4rem;
+  text-align: left;
+  font-size: 2rem;
 }
