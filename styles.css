@@ -32,6 +32,7 @@ body * {
   width: 1120px;
 }
 
+
 /* Estilizacao do Header */
 header {
   width: 100%;
@@ -87,15 +88,23 @@ header button:hover img {
   filter: invert(80%)
 }
 
+
 /* Estilizacao da Tabela */
 table {
   width: 100%;
-  border: 1px solid #4A808C;
-  border-radius: 12px;
+  border-collapse: collapse;
 }
 
 table thead {
   background-color: hsla(194, 72%, 13%, 1);
+}
+
+table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+table thead th:last-child {
+  border-top-right-radius: 12px;
 }
 
 table thead tr th{
