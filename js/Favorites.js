@@ -44,6 +44,7 @@ export class Favorites {
       this.entries = [githubUser, ...this.entries]
       this.update()
       this.save()
+      this.root.querySelector('header input').value = ''
     } catch(error) {
       alert(error.message)
     }
