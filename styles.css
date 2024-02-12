@@ -160,7 +160,11 @@ table tbody tr td{
   border-radius: 50%;
 }
 
-.user p {
+.user a {
+  text-decoration: none;
+}
+
+.user p{
   font-weight: 700;
 }
 
